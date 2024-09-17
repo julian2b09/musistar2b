@@ -66,4 +66,6 @@ body{
 h1{
     color: white;
     cursor: default;
+    position: absolute;
+    left: 60px;
 }
