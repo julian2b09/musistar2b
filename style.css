@@ -1,7 +1,11 @@
+/* pour ne pas avoir la petite bordure blanche */
 body{
     margin: 0;
 }
-
+/*----------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------la-navbar--------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/*tous le truc noir plus le logo est le boutton 3 barre ou boutton hamburger */
 .navbar{
     background-color: black;
     padding: 10px;
@@ -10,25 +14,25 @@ body{
     align-items: center;
     position: relative;
 }
-
+/*le logo*/
 .logo{
     color: white;
     font-size: 1.5rem;
 }
-
+/*pour que les lien sois en blanc est que le curseur soi en pointer*/
 .icon{
     fill: white;
     cursor: pointer;
 }
-
+/*pour faire disparaitre les lien */
 .navbar input, .nav-menu{
   display: none;
 }
-
+/*faire que des que le bouton 3 barre est cliquer ça ouvre le menu*/
 [id^=btn]:checked + ul{
     display: block;
 }
-
+/*pour tous les element du menue */
 .nav-menu{
     background-color: rgb(0, 0, 0);
     position: absolute;
@@ -36,26 +40,29 @@ body{
     left: 0;
     right: 0;
 }
-
+/*pour chaque element du menue*/
 .nav-item a{
     color: white;
     text-decoration: none;
     line-height: 70px;
     font-size: 1.2rem;
 }
-
+/*pour la couleur des que on touche le lien*/
 .nav-menu a:hover{
    color: cyan;
 }
-
+/*pour gérais quand c'est sur le tel ou le pc*/
 @media screen and (min-width: 768px){
+    /*pour l'ais faire disparaitre du menue sur le tel*/
     .icon{
         display: none;
     }
+    /*pour qu'il soit tousse aligner*/
     .nav-menu{
         display: initial;
         position: static;
     }
+    /*pour qu'il soit tousse aligner*/
     .nav-item{
         display: inline-block;
         margin-left: 60px;
@@ -64,10 +71,22 @@ body{
 
 
 }
-
+/*----------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------le-texte---------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/*pour le texte*/
 h1{
     color: white;
     cursor: default;
+    /*pour qu'il soit a la bonne position*/
     position: absolute;
     left: 60px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------background-------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------*/
+body{
+    background-image: url(img/musistar.png);
+    background-repeat: none;
+    background-size: cover;
 }
