@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+.navbar input, .nav-menu{
+  display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 47px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+.nav-menu a:hover{
+   color: cyan;
+}
+
+@media screen and (min-width: 768px){
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 60px;
+        
+    }
+}
