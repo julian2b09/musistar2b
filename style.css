@@ -61,11 +61,18 @@ body{
         margin-left: 60px;
         
     }
-}
 
 h1{
     color: white;
     cursor: default;
     position: absolute;
     left: 60px;
+
+}
+
+}
+
+h1{
+    color: white;
+    cursor: default;
 }
